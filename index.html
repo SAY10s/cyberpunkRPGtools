@@ -10,8 +10,25 @@
     <nav>
       <ul>
         <li>
+          <a href="#akcje-i-inicjatywa">Akcje i inicjatywa</a>
+          <ul class="nested-ul">
+            <li>
+              <a href="#inicjatywa">inicjatywa</a>
+            </li>
+            <li>
+              <a href="#skrot-akcji">skrót akcji</a>
+            </li>
+            <li>
+              <a href="#akcja-ruchu">Akcja ruchu</a>
+            </li>
+            <li>
+              <a href="#inne-typy-ruchu">inne typy ruchu</a>
+            </li>
+          </ul>
+        </li>
+        <li>
           <a href="#walka-dystansowa">Walka dystansowa</a>
-          <ul>
+          <ul class="nested-ul">
             <li>
               <a href="#celowanie">Celowanie</a>
             </li>
@@ -26,224 +43,935 @@
             </li>
           </ul>
         </li>
-        <li><a href="#test">Test</a></li>
+        <li>
+          <a href="#walka-w-zwarciu">Walka w zwarciu</a>
+          <ul class="nested-ul">
+            <li>
+              <a href="#bron-biala">broń biała</a>
+            </li>
+            <li>
+              <a href="#bijatyka">bijatyka </a>
+            </li>
+            <li>
+              <a href="#pochwycenie">pochwycenie</a>
+            </li>
+            <li>
+              <a href="#duszenie">duszenie</a>
+            </li>
+            <li>
+              <a href="#rzut">rzut</a>
+            </li>
+            <li>
+              <a href="#sztuki-walki">Sztuki walki</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#obrazenia-i-oslony">obrażenia i osłony</a>
+          <ul class="nested-ul">
+            <li>
+              <a href="#otrzymywanie-obrazen">Otrzymywanie obrażeń</a>
+            </li>
+            <li>
+              <a href="#progi-ran">progi ran</a>
+            </li>
+            <li>
+              <a href="#rany-krytyczne-ciala">Rany Krytyczne Ciała</a>
+            </li>
+            <li>
+              <a href="#rany-krytyczne-glowy">Rany Krytyczne Głowy</a>
+            </li>
+            <li>
+              <a href="#test-przezywalnosci">Test przeżywalności</a>
+            </li>
+            <li>
+              <a href="#oslony">Osłony</a>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
-
-    <section id="walka-dystansowa">
-      <h2>Walka Dystansowa</h2>
-      <article id="celowanie">
-        <h3>Celowanie</h3>
-        <p>
-          Pojedynczy (max 1LA - zabiera całą akcję) atak z modyfikatorem -8 do
-          testu.
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Celujesz w...</th>
-              <th>Efekt</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Głowę</td>
-              <td>Pomnóż obrażenia, które przejdą przez pancerz, x2</td>
-            </tr>
-            <tr>
-              <td>Trzymany przedmiot</td>
-              <td>Jeżeli atak przebije pancerz, cel upuszcza przedmiot.</td>
-            </tr>
-            <tr>
-              <td>Nogę</td>
-              <td>
-                Jeżeli atak przebije pancerz, cel otrzymuje Ranę Krytyczną
-                Złamanie Nogi.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-      <article id="ogien-pojedynczy">
-        <h3>
-          Ogień pojedynczy - PT Pojedynczego strzału w zależności od odległości
-        </h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Typy broni</th>
-              <th>0 to 6m</th>
-              <th>7 to 12m</th>
-              <th>13 to 25m</th>
-              <th>26 to 50m</th>
-              <th>51 to 100m</th>
-              <th>101 to 200m</th>
-              <th>201 to 400m</th>
-              <th>401 to 800m</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pistolety</td>
-              <td>13</td>
-              <td>15</td>
-              <td>20</td>
-              <td>25</td>
-              <td>30</td>
-              <td>30</td>
-              <td class="na">N/A</td>
-              <td class="na">N/A</td>
-            </tr>
-            <tr>
-              <td>PM-y</td>
-              <td>15</td>
-              <td>13</td>
-              <td>15</td>
-              <td>20</td>
-              <td>25</td>
-              <td>35</td>
-              <td class="na">N/A</td>
-              <td class="na">N/A</td>
-            </tr>
-            <tr>
-              <td>Strzelba (pocisk)</td>
-              <td>13</td>
-              <td>15</td>
-              <td>20</td>
-              <td>25</td>
-              <td>30</td>
-              <td class="na">N/A</td>
-              <td class="na">N/A</td>
-              <td class="na">N/A</td>
-            </tr>
-            <tr>
-              <td>Karabiny Szturmowe</td>
-              <td>17</td>
-              <td>16</td>
-              <td>15</td>
-              <td>13</td>
-              <td>15</td>
-              <td>16</td>
-              <td>25</td>
-              <td class="na">30</td>
-            </tr>
-            <tr>
-              <td>Karabiny Snajperskie</td>
-              <td>30</td>
-              <td>25</td>
-              <td>25</td>
-              <td>20</td>
-              <td>15</td>
-              <td>16</td>
-              <td>17</td>
-              <td class="na">20</td>
-            </tr>
-            <tr>
-              <td>Łuki i kusze</td>
-              <td>15</td>
-              <td>13</td>
-              <td>15</td>
-              <td>17</td>
-              <td>20</td>
-              <td>22</td>
-              <td class="na">N/A</td>
-              <td class="na">N/A</td>
-            </tr>
-            <tr>
-              <td>Granatniki</td>
-              <td>16</td>
-              <td>15</td>
-              <td>17</td>
-              <td>20</td>
-              <td>20</td>
-              <td>22</td>
-              <td>25</td>
-              <td class="na">N/A</td>
-            </tr>
-            <tr>
-              <td>Wyrzutnie rakiet</td>
-              <td>17</td>
-              <td>16</td>
-              <td>15</td>
-              <td>15</td>
-              <td>20</td>
-              <td>20</td>
-              <td>25</td>
-              <td>30</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-
-      <article id="ogien-ciagly">
-        <h3>Ogień ciągły - PT Ognia ciągłego w zależności od odległości</h3>
-        <p>
-          Kosztuje Akcję i zużywa 10 sztuk amunicji. (Musisz mieć min. 10 sztuk
-          ammo w magazynku). Używasz umiejętności Ogień Ciągły (x2)(REF).
-          Wykorzystuje się poniższą tabelę, zamiast tabeli Ognia Pojedynczego.
-          Strzelając ogniem ciągłym, nie można celować.
-        </p>
-        <p>
-          Cele z REF 8 lub wyższym mogą zdecydować się Unikać ognia ciągłego.
-        </p>
-        <p>
-          Jeśli trafisz, zadajesz 2k6 obrażeń, a następnie mnożysz wynik przez
-          tyle, o ile przerzuciłeś PT, do maksimum 3 dla PM-ów lub 4 dla
-          karabinów szturmowych. Może trafić krytycznie. Pancerz zmniejsza
-          zadane obrażenia.
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Typy broni</th>
-              <th>0 to 6m</th>
-              <th>7 to 12m</th>
-              <th>13 to 25m</th>
-              <th>26 to 50m</th>
-              <th>51 to 100m</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>PM-y</td>
-              <td>20</td>
-              <td>17</td>
-              <td>20</td>
-              <td>25</td>
-              <td>30</td>
-            </tr>
-            <tr>
-              <td>Karabiny Szturmowe</td>
-              <td>22</td>
-              <td>20</td>
-              <td>17</td>
-              <td>20</td>
-              <td>25</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-      <article id="inne-ataki-dystansowe">
-        <div>
-          <h3>Dobywanie, upuszczanie i CHowanie broni</h3>
+    <main>
+      <section id="akcje-i-inicjatywa">
+        <h2>Akcje i inicjatywa</h2>
+        <article id="inicjatywa">
+          <h3>Inicjatywa</h3>
           <p>
-            Dobycie łatwo dostępnej broni nie jest akcją (o ile masz jedną rękę
-            wolną). Upuszczenie również nie jest akcją. Schowanie broni do
-            kabury, kieszeni, plecaka etc. jest akcją.
+            Każda tura zajmuje 3 sekundy. Wszystkie tury dzieją się +/- w tym
+            samym czasie w trakcie jednej rundy.
           </p>
-          <p>Przygotowanie lub upuszczenie tarczy jest akcją.</p>
-        </div>
-        <div>
-          <h3>Przeładowywanie</h3>
+          <div class="rzuty-box">
+            <p>Na start walki, wszyscy rzucają na inicjatywę:</p>
+            <p>REF + 1k10</p>
+          </div>
           <p>
-            Przeładowywanie zajmuje akcję. Nie można mieszać typów amunicji w
-            magazynku
+            Remisy rozstrzyga się dodatkowym rzutem postaci, które zremisowały.
+          </p>
+          <div class="rzuty-box">
+            <p>Każda tura składa się z:</p>
+            <p>1 Akcja ruchu + 1 inna Akcja</p>
+          </div>
+        </article>
+        <article id="skrot-akcji">
+          <h3>Skrót Akcji</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Akcja</th>
+                <th>Opis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ruch</td>
+                <td>
+                  Przemieszczasz się o tyle metrów, ile wynosi twój RUCH x2 (lub
+                  o liczbę pół równą wartości RUCH)
+                </td>
+              </tr>
+              <tr>
+                <td>Atak</td>
+                <td>Wykonaj atak wręcz lub dystansowy.</td>
+              </tr>
+              <tr>
+                <td>Duszenie</td>
+                <td>Dusisz przeciwnika, którego pochwyciłeś.</td>
+              </tr>
+              <tr>
+                <td>Wyposaż/Odłóż Tarczę</td>
+                <td>
+                  Wyposażenie i odłożenie tarczy zajmuje Akcję. Patrz sekcja
+                  "Korzystanie z Tarczy" na str. 183.
+                </td>
+              </tr>
+              <tr>
+                <td>Wejście do Pojazdu</td>
+                <td>
+                  Wejdź do pojazdu. Patrz sekcja "Walka Pojazdów" na str. 189.
+                </td>
+              </tr>
+              <tr>
+                <td>Wstawanie</td>
+                <td>
+                  Wstań po byciu Przewróconym. Będąc Przewróconym, dopóki nie
+                  użyjesz tej Akcji, nie możesz użyć Akcji Ruchu.
+                </td>
+              </tr>
+              <tr>
+                <td>Złapanie</td>
+                <td>
+                  Złap i trzymaj przeciwnika lub chwyć trzymany przez niego
+                  przedmiot.
+                </td>
+              </tr>
+              <tr>
+                <td>Wstrzymanie Akcji</td>
+                <td>
+                  Wstrzymaj Akcję do późniejszego momentu w Kolejce Inicjatywy.
+                  Musisz wybrać określone zdarzenie, które uruchomi Akcję, lub
+                  konkretny numer w Kolejce Inicjatywy, kiedy Akcja się
+                  odbędzie, a także określić, jaka to Akcja i jaki jest jej cel.
+                </td>
+              </tr>
+              <tr>
+                <td>Ludzka Tarcza</td>
+                <td>
+                  Wyposaż przeciwnika, którego Złapałeś, jako Ludzką Tarczę.
+                </td>
+              </tr>
+              <tr>
+                <td>Przeładowanie</td>
+                <td>
+                  Całkowicie przeładuj i wymień magazynek broni na jeden typ
+                  amunicji.
+                </td>
+              </tr>
+              <tr>
+                <td>Bieg</td>
+                <td>
+                  Wykonaj dodatkową Akcję Ruchu, ale tylko jeśli już wykonałeś
+                  Akcję Ruchu w tej Turze.
+                </td>
+              </tr>
+              <tr>
+                <td>Uruchomienie Pojazdu</td>
+                <td>
+                  Uruchom pojazd, aby uzyskać jego WARTOŚĆ RUCHU i przeskoczyć
+                  na początek Kolejki Inicjatywy.
+                </td>
+              </tr>
+              <tr>
+                <td>Stabilizacja</td>
+                <td>
+                  Stabilizuj cel, aby rozpocząć naturalny proces leczenia lub
+                  wyciągnąć go ze stanu Krytycznych Ran, aby uratować mu życie.
+                  Patrz str. 222.
+                </td>
+              </tr>
+              <tr>
+                <td>Rzut</td>
+                <td>
+                  Rzuć Złapanego przeciwnika na ziemię lub rzuć przedmiotem.
+                </td>
+              </tr>
+              <tr>
+                <td>Netrunning</td>
+                <td>Netrunning. Nie mamy netrunnerów (chwała bogu).</td>
+              </tr>
+              <tr>
+                <td>Użycie Przedmiotu</td>
+                <td>
+                  Użycie przedmiotu niewymagającego rzutu na umiejętności.
+                  Wyciągnięcie łatwo dostępnej broni do wolnej ręki lub
+                  upuszczenie trzymanej broni (nie tarczy) na podłogę nie wymaga
+                  tej Akcji, ale schowanie trzymanej broni do
+                  kieszeni/plecaka/etc już tak.
+                </td>
+              </tr>
+              <tr>
+                <td>Użycie Umiejętności</td>
+                <td>
+                  Użyj jednej ze swoich Umiejętności, aby wykonać szybką
+                  czynność. Dłuższa czynność będzie wymagała wielu Akcji w
+                  trakcie wielu Tur, a rzuty będą wykonywane, dopiero gdy
+                  czynność dobiegnie końca (tj. minie odpowiednia ilość 3
+                  sekundowych tur).
+                </td>
+              </tr>
+              <tr>
+                <td>Manewr Pojazdu</td>
+                <td>
+                  Użyj swojej Akcji podczas prowadzenia pojazdu, aby skupić się
+                  całkowicie na wykonaniu niebezpiecznego Manewru.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article id="akcja-ruchu">
+          <h3>Akcja Ruchu</h3>
+          <p>
+            Przemieszczasz się o tyle metrów, ile wynosi twój RUCH x2 (lub o
+            liczbę pół równą wartości RUCH)
+          </p>
+          <p>
+            Jeżeli jesteś przewrócony, to musisz poświęcić akcję ruchu na
+            wstanie, zanim będziesz mógł wykonać akcję ruchu.
+          </p>
+          <h3 id="inne-typy-ruchu">
+            Inne typy ruchu - Pływanie, Wspinaczka, Skok
+          </h3>
+          <p>
+            Inne typy ruchu skracają odległość przemieszczania się o 50%, tj. 1
+            punkt RUCHU daje 1m przemieszczenia "innym typem". Skok z miejsca
+            pozwala przemieścić się o 25% RUCHU, skok z rozbiegu o 50% RUCHU.
+            Spadanie i tonięcie znajduje się w dziale Otrzymywanie obrażeń.
+          </p>
+        </article>
+      </section>
+      <section id="walka-dystansowa">
+        <h2>Walka Dystansowa</h2>
+        <article id="celowanie">
+          <h3>Celowanie</h3>
+          <p>
+            Pojedynczy (max 1LA - zabiera całą akcję) atak z modyfikatorem -8 do
+            testu.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Celujesz w...</th>
+                <th>Efekt</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Głowę</td>
+                <td>Pomnóż obrażenia, które przejdą przez pancerz, x2</td>
+              </tr>
+              <tr>
+                <td>Trzymany przedmiot</td>
+                <td>Jeżeli atak przebije pancerz, cel upuszcza przedmiot.</td>
+              </tr>
+              <tr>
+                <td>Nogę</td>
+                <td>
+                  Jeżeli atak przebije pancerz, cel otrzymuje Ranę Krytyczną
+                  Złamanie Nogi.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article id="ogien-pojedynczy">
+          <h3>
+            Ogień pojedynczy - PT Pojedynczego strzału w zależności od
+            odległości
+          </h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Typy broni</th>
+                <th>0 to 6m</th>
+                <th>7 to 12m</th>
+                <th>13 to 25m</th>
+                <th>26 to 50m</th>
+                <th>51 to 100m</th>
+                <th>101 to 200m</th>
+                <th>201 to 400m</th>
+                <th>401 to 800m</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pistolety</td>
+                <td>13</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+                <td>30</td>
+                <td class="na">N/A</td>
+                <td class="na">N/A</td>
+              </tr>
+              <tr>
+                <td>PM-y</td>
+                <td>15</td>
+                <td>13</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>35</td>
+                <td class="na">N/A</td>
+                <td class="na">N/A</td>
+              </tr>
+              <tr>
+                <td>Strzelba (pocisk)</td>
+                <td>13</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+                <td class="na">N/A</td>
+                <td class="na">N/A</td>
+                <td class="na">N/A</td>
+              </tr>
+              <tr>
+                <td>Karabiny Szturmowe</td>
+                <td>17</td>
+                <td>16</td>
+                <td>15</td>
+                <td>13</td>
+                <td>15</td>
+                <td>16</td>
+                <td>25</td>
+                <td class="na">30</td>
+              </tr>
+              <tr>
+                <td>Karabiny Snajperskie</td>
+                <td>30</td>
+                <td>25</td>
+                <td>25</td>
+                <td>20</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td class="na">20</td>
+              </tr>
+              <tr>
+                <td>Łuki i kusze</td>
+                <td>15</td>
+                <td>13</td>
+                <td>15</td>
+                <td>17</td>
+                <td>20</td>
+                <td>22</td>
+                <td class="na">N/A</td>
+                <td class="na">N/A</td>
+              </tr>
+              <tr>
+                <td>Granatniki</td>
+                <td>16</td>
+                <td>15</td>
+                <td>17</td>
+                <td>20</td>
+                <td>20</td>
+                <td>22</td>
+                <td>25</td>
+                <td class="na">N/A</td>
+              </tr>
+              <tr>
+                <td>Wyrzutnie rakiet</td>
+                <td>17</td>
+                <td>16</td>
+                <td>15</td>
+                <td>15</td>
+                <td>20</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <article id="ogien-ciagly">
+          <h3>Ogień ciągły - PT Ognia ciągłego w zależności od odległości</h3>
+          <p>
+            Kosztuje Akcję i zużywa 10 sztuk amunicji. (Musisz mieć min. 10
+            sztuk ammo w magazynku). Używasz umiejętności Ogień Ciągły
+            (x2)(REF). Wykorzystuje się poniższą tabelę, zamiast tabeli Ognia
+            Pojedynczego. Strzelając ogniem ciągłym, nie można celować.
+          </p>
+          <p>
+            Cele z REF 8 lub wyższym mogą zdecydować się Unikać ognia ciągłego.
+          </p>
+          <p>
+            Jeśli trafisz, zadajesz 2k6 obrażeń, a następnie mnożysz wynik przez
+            tyle, o ile przerzuciłeś PT, do maksimum 3 dla PM-ów lub 4 dla
+            karabinów szturmowych. Może trafić krytycznie. Pancerz zmniejsza
+            zadane obrażenia.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Typy broni</th>
+                <th>0 to 6m</th>
+                <th>7 to 12m</th>
+                <th>13 to 25m</th>
+                <th>26 to 50m</th>
+                <th>51 to 100m</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PM-y</td>
+                <td>20</td>
+                <td>17</td>
+                <td>20</td>
+                <td>25</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Karabiny Szturmowe</td>
+                <td>22</td>
+                <td>20</td>
+                <td>17</td>
+                <td>20</td>
+                <td>25</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article id="inne-ataki-dystansowe">
+          <div>
+            <h3>Dobywanie, upuszczanie i CHowanie broni</h3>
+            <p>
+              Dobycie łatwo dostępnej broni nie jest akcją (o ile masz jedną
+              rękę wolną). Upuszczenie również nie jest akcją. Schowanie broni
+              do kabury, kieszeni, plecaka etc. jest akcją.
+            </p>
+            <p>Przygotowanie lub upuszczenie tarczy jest akcją.</p>
+          </div>
+          <div>
+            <h3>Przeładowywanie</h3>
+            <p>
+              Przeładowywanie zajmuje akcję. Nie można mieszać typów amunicji w
+              magazynku
+            </p>
+          </div>
+        </article>
+      </section>
+      <section id="walka-w-zwarciu">
+        <h2>Walka w zwarciu</h2>
+        <article id="bron-biala">
+          <h3>Broń biała</h3>
+          <p>Atakowany cel musi znajdować się do 2m od Ciebie.</p>
+          <p>Broń biała ignoruje 50% pancerza (zaokrąglając w górę).</p>
+          <p>
+            Postacie z BC 8+ mogą używać dwuręcznych broni jak broni
+            jednoręcznych.
+          </p>
+          <div class="rzuty-box">
+            <p>Atakujący: ZW + broń biała + 1k10</p>
+            <p>Broniący: ZW + Unik + 1k10</p>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Typ broni białej</th>
+                <th>Obrażenia</th>
+                <th>LA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lekka</td>
+                <td>1k6</td>
+                <td>2 LA</td>
+              </tr>
+              <tr>
+                <td>Średnia</td>
+                <td>2k6</td>
+                <td>2 LA</td>
+              </tr>
+              <tr>
+                <td>Duża</td>
+                <td>3k6</td>
+                <td>2 LA</td>
+              </tr>
+              <tr>
+                <td>Bardzo duża</td>
+                <td>4k6</td>
+                <td>1 LA</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <article id="bijatyka">
+          <h3>Bijatyka</h3>
+          <p>Obrażenia zadane bijatyką NIE IGNORUJĄ pancerza.</p>
+          <p>Bijatyka ma 2LA.</p>
+          <div class="rzuty-box">
+            <p>Atakujący: ZW + bijatyka + 1k10</p>
+            <p>Broniący: ZW + Unik + 1k10</p>
+          </div>
+          <table class="bijatyka-dmg">
+            <thead>
+              <tr>
+                <th>Budowa Ciała</th>
+                <th>4 lub mniej</th>
+                <th>5-6 (lub cyberręka)</th>
+                <th>7-10</th>
+                <th>11+</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Obrażenia</td>
+                <td>1k6</td>
+                <td>2k6</td>
+                <td>3k6</td>
+                <td>4k6</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="pochwycenie">
+            <h3>Pochwycenie</h3>
+            <p>
+              Pochwycenie wymaga wolnej ręki, która będzie wykorzystywana przez
+              cały czas trwania pochwycenia.
+            </p>
+            <p>
+              Pochwycenie pozwala chwycić i przetrzymać przeciwnika, zabrać mu
+              coś z ręki lub wyrwać się z cudzego pochwycenia.
+            </p>
+            <p>
+              Przetrzymywanie broniącego daje modyfikator -2 dla trzymającego i
+              trzymanego do wszystkich akcji.
+            </p>
+            <p>
+              Trzymając broniącego, można wykorzystać akcję na "ubranie" go jako
+              Żywej Tarczy.
+            </p>
+            <div class="rzuty-box">
+              <p>Atakujący: ZW + bijatyka + 1k10</p>
+              <p>Broniący: ZW + bijatyka + 1k10</p>
+            </div>
+          </div>
+          <div id="duszenie">
+            <h3>Duszenie</h3>
+            <p>Jeżeli trzymasz kogoś, możesz go dusić.</p>
+            <p>
+              Zadaje obrażenia równe BC duszącego. Duszenie ignoruje pancerz.
+            </p>
+            <p>
+              Duszenie nie zabija, przy 1PW postać mdleje. Po trzech rundach
+              duszenia (niezależnie od PW) duszony mdleje.
+            </p>
+          </div>
+          <div id="rzut">
+            <h3>Rzut</h3>
+            <p>
+              Możesz rzucić trzymanym, zadając obrażenia równe twojej BC.
+              Ignoruje pancerz
+            </p>
+            <p>Rzut przedmiotem to ZW + Atletyka + 1k10 o PT granatkika.</p>
+          </div>
+        </article>
+        <article id="sztuki-walki">
+          <h3>Sztuki walki</h3>
+          <p>Strona 178.</p>
+        </article>
+      </section>
+      <section id="obrazenia-i-oslony">
+        <h2>Obrażenia, rany krytyczne i osłony</h2>
+        <div id="otrzymywanie-obrazen">
+          <h3>Otrzymywanie obrażeń</h3>
+
+          <div class="rzuty-box">
+            <p>Zawsze, gdy otrzymujesz obrażenia:</p>
+
+            <p>
+              1. Twój przeciwnik rzuca kośćmi, aby określić obrażenia swojego
+              ataku.
+            </p>
+
+            <p>
+              2. Od otrzymanych obrażeń odejmij OB danej lokalizacji* (jeśli
+              przeciwnik nie celował, zawsze trafia w ciało). Następnie odejmij
+              pozostałe obrażenia od swoich Punktów Życia.
+            </p>
+            <p>3. Jeżeli otrzymujesz obrażenia, pancerz spada o 1 OB.</p>
+          </div>
+          <p>
+            *Niektóre źródła obrażeń, takie jak trucizny i ogień, omijają
+            pancerz.
           </p>
         </div>
-      </article>
-    </section>
-    <section id="test">
-      <p>Hi!</p>
-    </section>
+        <div id="progi-ran">
+          <h3>Progi ran</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Stan Rany</th>
+                <th>Próg Rany</th>
+                <th>Efekt Rany</th>
+                <th>Trudność Stabilizacji (DV)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lekko Ranny</td>
+                <td>Mniej niż pełne PW</td>
+                <td>Brak</td>
+                <td>PT 10</td>
+              </tr>
+              <tr>
+                <td>Poważnie Ranny</td>
+                <td>Mniej niż 50% Punktów Życia (zaokrąglone w górę)</td>
+                <td>-2 do wszystkich Akcji</td>
+                <td>PT 13</td>
+              </tr>
+              <tr>
+                <td>Śmiertelnie Ranny</td>
+                <td>Mniej niż 1 PW</td>
+                <td>
+                  -4 do wszystkich Akcji<br />
+                  -6 do RUCHU (minimum 1)<br />
+                  Musi wykonać Test Przeżywalności na początku każdej swojej
+                  Tury. Śmiertelnie ranna postać zawsze otrzymuje ranę krytyczną
+                  oraz modyfikator -1 do testów przeżywalności.
+                </td>
+                <td>
+                  PT 15, aby wyleczyć się do 1 Punktu Życia i zostać
+                  Nieprzytomnym (nieobecny przez 1 minutę)
+                </td>
+              </tr>
+              <tr>
+                <td>Martwy</td>
+                <td>Jedno nieudane Ratowanie Życia</td>
+                <td>Śmierć</td>
+                <td>Broskie nie żyje. Jak go chcesz kurwa stabilizować.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="rany-krytyczne-ciala">
+          <h3>Rany Krytyczne Ciała</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Rzut (2d6)</th>
+                <th>Obrażenie</th>
+                <th>Efekt Obrzędu</th>
+                <th>Przyspieszona Naprawa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2</td>
+                <td>Odcięta Ręka</td>
+                <td>
+                  Odcięta Ręka jest nieobecna. Natychmiast wypuszczasz
+                  przedmioty trzymane w tej ręce. Kara za Ratowanie Życia
+                  wzrasta o 1.
+                </td>
+                <td>N/A<br />Operacja DV17</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Odcięta Dłoń</td>
+                <td>
+                  Odcięta Dłoń jest nieobecna. Natychmiast wypuszczasz
+                  przedmioty trzymane w tej dłoni. Kara za Ratowanie Życia
+                  wzrasta o 1.
+                </td>
+                <td>N/A<br />Operacja DV17</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Zapadnięte Płuco</td>
+                <td>
+                  -2 do RUCHU (minimum 1). Kara za Ratowanie Życia wzrasta o 1.
+                </td>
+                <td>Paramedic<br />DV15<br />Operacja DV15</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Złamane Żebra</td>
+                <td>
+                  Na koniec każdej Tury, w której poruszasz się dalej niż
+                  4m/jardów pieszo, ponosisz dodatkowe obrażenia od tego
+                  Krytycznego Urazu bezpośrednio na swoich Punktach Życia.
+                </td>
+                <td>
+                  Paramedic<br />DV13<br />Paramedic DV15 lub Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Złamana Ręka</td>
+                <td>
+                  Złamana Ręka nie może być używana. Natychmiast wypuszczasz
+                  przedmioty trzymane w tej ręce.
+                </td>
+                <td>
+                  Paramedic<br />DV13<br />Paramedic DV15 lub Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Obcy Obiekt</td>
+                <td>
+                  Na koniec każdej Tury, w której poruszasz się dalej niż
+                  4m/jardów pieszo, ponosisz dodatkowe obrażenia od tego
+                  Krytycznego Urazu bezpośrednio na swoich Punktach Życia.
+                </td>
+                <td>
+                  Pierwsza Pomoc lub<br />Paramedic DV13<br />Szybka Naprawa
+                  trwale usuwa Efekt Obrzędu
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Złamana Noga</td>
+                <td>-4 do RUCHU (minimum 1)</td>
+                <td>
+                  Paramedic<br />DV13<br />Paramedic DV15 lub Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Rozciągnięty Mięsień</td>
+                <td>-2 do Ataków Wręcz</td>
+                <td>
+                  Pierwsza Pomoc lub<br />Paramedic DV13<br />Szybka Naprawa
+                  trwale usuwa Efekt Obrzędu
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Uraz Kręgosłupa</td>
+                <td>
+                  W następnej Turze nie możesz podjąć Akcji, ale nadal możesz
+                  wykonać Akcję Ruchu. Kara za Ratowanie Życia wzrasta o 1.
+                </td>
+                <td>Paramedic<br />DV15<br />Operacja DV15</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Zmiażdżone Palce</td>
+                <td>-4 do wszystkich Akcji związanych z tą ręką</td>
+                <td>Paramedic<br />DV13<br />Operacja DV15</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Odcięta Noga</td>
+                <td>
+                  Odcięta Noga jest nieobecna. -6 do RUCHU (minimum 1). Nie
+                  możesz unikać ataków. Kara za Ratowanie Życia wzrasta o 1.
+                </td>
+                <td>N/A<br />Operacja DV17</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="rany-krytyczne-glowy">
+          <h3>Rany Krytyczne Głowy</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Rzut (2d6)</th>
+                <th>Obrażenie</th>
+                <th>Efekt Obrzędu</th>
+                <th>Przyspieszona Naprawa</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2</td>
+                <td>Utrata Oka</td>
+                <td>
+                  Utracone Oko jest nieobecne. -4 do Ataków Dystansowych i
+                  Testów Percepcji związanych z wzrokiem. Kara za Ratowanie
+                  Życia wzrasta o 1.
+                </td>
+                <td>N/A<br />Operacja DV17</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Uraz Mózgu</td>
+                <td>
+                  -2 do wszystkich Akcji. Kara za Ratowanie Życia wzrasta o 1.
+                </td>
+                <td>N/A<br />Operacja DV17</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Uszkodzone Oko</td>
+                <td>
+                  -2 do Ataków Dystansowych i Testów Percepcji związanych z
+                  wzrokiem.
+                </td>
+                <td>Paramedic<br />DV15<br />Operacja DV13</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Wstrząs Mózgu</td>
+                <td>-2 do wszystkich Akcji.</td>
+                <td>
+                  Pierwsza Pomoc lub<br />Paramedic DV13<br />Szybka Naprawa
+                  trwale usuwa Efekt Obrzędu
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Złamana Szczęka</td>
+                <td>-4 do wszystkich Akcji związanych z mówieniem.</td>
+                <td>Paramedic<br />DV13<br />Paramedic lub Operacja DV13</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Obcy Obiekt</td>
+                <td>
+                  Na koniec każdej Tury, w której poruszasz się dalej niż
+                  4m/jardów pieszo, ponosisz dodatkowe obrażenia od tego
+                  Krytycznego Urazu bezpośrednio na swoich Punktach Życia.
+                </td>
+                <td>
+                  Pierwsza Pomoc lub<br />Paramedic DV13<br />Szybka Naprawa
+                  trwale usuwa Efekt Obrzędu
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Uraz Szyi</td>
+                <td>Kara za Ratowanie Życia wzrasta o 1.</td>
+                <td>Paramedic<br />DV13<br />Paramedic lub Operacja DV13</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Spękany Czaszka</td>
+                <td>
+                  Celne Strzały w głowę mnożą obrażenia, które przechodzą przez
+                  SP, przez 3 zamiast 2. Kara za Ratowanie Życia wzrasta o 1.
+                </td>
+                <td>Paramedic<br />DV15<br />Paramedic lub Operacja DV15</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Uszkodzone Ucho</td>
+                <td>
+                  Za każdym razem, gdy poruszasz się dalej niż 4m/jardów pieszo
+                  w Turze, nie możesz wykonać Akcji Ruchu w następnej Turze.
+                  Dodatkowo, otrzymujesz -2 do Testów Percepcji związanych z
+                  słuchaniem.
+                </td>
+                <td>Paramedic<br />DV13<br />Operacja DV13</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Zmiażdżona Tchawica</td>
+                <td>Nie możesz mówić. Kara za Ratowanie Życia wzrasta o 1.</td>
+                <td>N/A<br />Operacja DV15</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Utrata Ucha</td>
+                <td>
+                  Utracone Ucho jest nieobecne. Za każdym razem, gdy poruszasz
+                  się dalej niż 4m/jardów pieszo w Turze, nie możesz wykonać
+                  Akcji Ruchu w następnej Turze. Dodatkowo, otrzymujesz -4 do
+                  Testów Percepcji związanych z słuchaniem. Kara za Ratowanie
+                  Życia wzrasta o 1.
+                </td>
+                <td>N/A<br />Operacja DV17</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="test-przezywalnosci">
+          <h2>Test Przeżywalności</h2>
+          <p>
+            Na początku każdej z Twoich Tur, gdy jesteś Śmiertelnie Ranny,
+            musisz wykonać test Ratowania Życia.
+          </p>
+
+          <div class="rzuty-box">
+            <p>Rzuć kostką d10.</p>
+            <p>Sukces: Wynik < BC - Modyfikatory</p>
+          </div>
+          <p>
+            Każdy nieudany rzut daje Mod -1. Wynik 10 na kostce to automatyczna
+            śmierć.
+          </p>
+        </div>
+        <div id="oslony">
+          <h3>Osłony</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Rodzaj Osłony</th>
+                <th>Gruba HP</th>
+                <th>Cienka HP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Stal</td>
+                <td>50 HP</td>
+                <td>25 HP</td>
+              </tr>
+              <tr>
+                <td>Kamień</td>
+                <td>40 HP</td>
+                <td>20 HP</td>
+              </tr>
+              <tr>
+                <td>Szkło pancerne</td>
+                <td>30 HP</td>
+                <td>15 HP</td>
+              </tr>
+              <tr>
+                <td>Beton</td>
+                <td>25 HP</td>
+                <td>10 HP</td>
+              </tr>
+              <tr>
+                <td>Drewno</td>
+                <td>20 HP</td>
+                <td>5 HP</td>
+              </tr>
+              <tr>
+                <td>Plastik/etc.</td>
+                <td>15 HP</td>
+                <td>0 HP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

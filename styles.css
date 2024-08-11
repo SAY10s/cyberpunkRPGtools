@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
   font-family: "Jost", sans-serif;
 }
@@ -14,29 +17,74 @@ a {
   font-weight: bold;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;
+}
+
 nav {
   position: sticky;
   top: 0;
+  height: 100vh;
 
   /*display: flex;*/
-  background-color: white;
   text-transform: uppercase;
   text-decoration: none;
+
+  padding: 2rem;
+
+  background-color: #c41e3a;
 }
 nav a {
   text-decoration: none;
+  color: white;
 }
 
 li {
   padding: 0.25rem;
+  list-style: none;
+  white-space: nowrap;
+}
+
+li {
+  font-size: 1.5rem;
+}
+
+.nested-ul li {
+  font-size: 1rem;
+  list-style: disc;
+}
+.nested-ul {
+  padding-left: 2rem;
+}
+li::marker {
+  color: white;
 }
 
 section {
+  width: 100%;
   max-width: 800px;
 }
 
 article {
   margin-bottom: 5rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.rzuty-box {
+  width: 100%;
+  background-color: #f3f3f4;
+  font-size: 1.5rem;
+  text-align: center;
+  border: 2px solid #c41e3a;
+  margin: 1rem 0;
+  font-weight: 600;
 }
 
 h2 {
@@ -46,7 +94,6 @@ h2 {
   color: white;
   padding: 0.5rem;
   margin: 3rem 0;
-  /*font-size: 2rem;*/
 }
 
 table {
@@ -93,6 +140,11 @@ thead th:first-child {
   background-color: #c41e3a;
   font-size: 16px;
   border-left: none;
+}
+
+.bijatyka-dmg th,
+.bijatyka-dmg td {
+  width: 20%;
 }
 
 h3 {
