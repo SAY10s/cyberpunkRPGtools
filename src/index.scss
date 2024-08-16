@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
 
+#root {
+  width: 100%;
+  display: flex;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -29,6 +34,7 @@ nav {
   position: sticky;
   top: 0;
   height: 100vh;
+  width: fit-content;
 
   /*display: flex;*/
   text-transform: uppercase;
