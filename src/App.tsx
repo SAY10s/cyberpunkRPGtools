@@ -1,4 +1,4 @@
-import NavBar from "./Components/NavBar.tsx";
+import NavBar from "./Components/NavBar/NavBar.tsx";
 import Zasady from "./Views/Zasady.tsx";
 
 function App() {

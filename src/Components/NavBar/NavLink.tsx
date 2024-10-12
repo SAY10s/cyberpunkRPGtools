@@ -1,5 +1,5 @@
 import React from "react";
-import { toLowercaseRemovePolishAndReplaceSpaces } from "../utils/utils.ts";
+import { toLowercaseRemovePolishAndReplaceSpaces } from "../../utils/utils.ts";
 
 interface NavLinkProps {
   name: string;
