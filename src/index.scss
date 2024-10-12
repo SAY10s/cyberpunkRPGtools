@@ -43,30 +43,29 @@ nav {
   padding: 2rem;
 
   background-color: #c41e3a;
+  li {
+    padding: 0.25rem;
+    list-style: none;
+    white-space: nowrap;
+  }
+
+  li {
+    font-size: 1.5rem;
+  }
+
+  .nested-ul li {
+    font-size: 1rem;
+    list-style: disc;
+  }
+  .nested-ul {
+    padding-left: 2rem;
+  }
+  li::marker {
+    color: white;
+  }
 }
 nav a {
   text-decoration: none;
-  color: white;
-}
-
-li {
-  padding: 0.25rem;
-  list-style: none;
-  white-space: nowrap;
-}
-
-li {
-  font-size: 1.5rem;
-}
-
-.nested-ul li {
-  font-size: 1rem;
-  list-style: disc;
-}
-.nested-ul {
-  padding-left: 2rem;
-}
-li::marker {
   color: white;
 }
 
@@ -162,4 +161,8 @@ h3::before {
   color: #c41e3a;
   content: "▶";
   padding-right: 0.5rem;
+}
+
+h4 {
+  font-size: 1.15rem;
 }
