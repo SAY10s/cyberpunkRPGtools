@@ -4,7 +4,7 @@ import Box from "../Components/Box.tsx";
 
 const Zasady = () => {
   return (
-    <div>
+    <>
       <Section sectionName="akcje i inicjatywa">
         <Article articleName="inicjatywa">
           <p>
@@ -524,7 +524,6 @@ const Zasady = () => {
             pancerz.
           </p>
         </Article>
-
         <Article articleName="progi ran">
           <table>
             <thead>
@@ -571,14 +570,13 @@ const Zasady = () => {
             </tbody>
           </table>
         </Article>
-
         <Article articleName="rany krytyczne ciała">
           <table>
             <thead>
               <tr>
                 <th>Rzut (2d6)</th>
                 <th>Obrażenie</th>
-                <th>Efekt Obrażenia</th>
+                <th>Efekt Obrzędu</th>
                 <th>Przyspieszona Naprawa</th>
               </tr>
             </thead>
@@ -587,45 +585,165 @@ const Zasady = () => {
                 <td>2</td>
                 <td>Odcięta Ręka</td>
                 <td>
-                  Odcięta Ręka. Natychmiast wypuszczasz przedmioty z ręki. Kara
-                  +1 do Testu Przeżywalności.
+                  Odcięta Ręka jest nieobecna. Natychmiast wypuszczasz
+                  przedmioty trzymane w tej ręce. Kara za Ratowanie Życia
+                  wzrasta o 1.
                 </td>
-                <td>N/A, Operacja DV17</td>
+                <td>
+                  N/A
+                  <br />
+                  Operacja DV17
+                </td>
               </tr>
               <tr>
                 <td>3</td>
                 <td>Odcięta Dłoń</td>
-                <td>Odcięta Dłoń. Kara +1 do Testu Przeżywalności.</td>
-                <td>N/A, Operacja DV17</td>
+                <td>
+                  Odcięta Dłoń jest nieobecna. Natychmiast wypuszczasz
+                  przedmioty trzymane w tej dłoni. Kara za Ratowanie Życia
+                  wzrasta o 1.
+                </td>
+                <td>
+                  N/A
+                  <br />
+                  Operacja DV17
+                </td>
               </tr>
               <tr>
                 <td>4</td>
                 <td>Zapadnięte Płuco</td>
                 <td>
-                  -2 do RUCHU (minimum 1). Kara +1 do Testu Przeżywalności.
+                  -2 do RUCHU (minimum 1). Kara za Ratowanie Życia wzrasta o 1.
                 </td>
-                <td>Paramedic DV15, Operacja DV15</td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV15
+                  <br />
+                  Operacja DV15
+                </td>
               </tr>
               <tr>
                 <td>5</td>
                 <td>Złamane Żebra</td>
                 <td>
-                  Dodatkowe obrażenia, jeśli poruszysz się dalej niż 4m. <br />
-                  Paramedic DV13, Operacja DV13
+                  Na koniec każdej Tury, w której poruszasz się dalej niż
+                  4m/jardów pieszo, ponosisz dodatkowe obrażenia od tego
+                  Krytycznego Urazu bezpośrednio na swoich Punktach Życia.
                 </td>
-                <td>Paramedic DV15</td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV13
+                  <br />
+                  Paramedic DV15 lub Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Złamana Ręka</td>
+                <td>
+                  Złamana Ręka nie może być używana. Natychmiast wypuszczasz
+                  przedmioty trzymane w tej ręce.
+                </td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV13
+                  <br />
+                  Paramedic DV15 lub Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Obcy Obiekt</td>
+                <td>
+                  Na koniec każdej Tury, w której poruszasz się dalej niż
+                  4m/jardów pieszo, ponosisz dodatkowe obrażenia od tego
+                  Krytycznego Urazu bezpośrednio na swoich Punktach Życia.
+                </td>
+                <td>
+                  Pierwsza Pomoc lub
+                  <br />
+                  Paramedic DV13
+                  <br />
+                  Szybka Naprawa trwale usuwa Efekt Obrzędu
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Złamana Noga</td>
+                <td>-4 do RUCHU (minimum 1)</td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV13
+                  <br />
+                  Paramedic DV15 lub Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Rozciągnięty Mięsień</td>
+                <td>-2 do Ataków Wręcz</td>
+                <td>
+                  Pierwsza Pomoc lub
+                  <br />
+                  Paramedic DV13
+                  <br />
+                  Szybka Naprawa trwale usuwa Efekt Obrzędu
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Uraz Kręgosłupa</td>
+                <td>
+                  W następnej Turze nie możesz podjąć Akcji, ale nadal możesz
+                  wykonać Akcję Ruchu. Kara za Ratowanie Życia wzrasta o 1.
+                </td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV15
+                  <br />
+                  Operacja DV15
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Zmiażdżone Palce</td>
+                <td>-4 do wszystkich Akcji związanych z tą ręką</td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV13
+                  <br />
+                  Operacja DV15
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Odcięta Noga</td>
+                <td>
+                  Odcięta Noga jest nieobecna. -6 do RUCHU (minimum 1). Nie
+                  możesz unikać ataków. Kara za Ratowanie Życia wzrasta o 1.
+                </td>
+                <td>
+                  N/A
+                  <br />
+                  Operacja DV17
+                </td>
               </tr>
             </tbody>
           </table>
         </Article>
-
         <Article articleName="rany krytyczne głowy">
           <table>
             <thead>
               <tr>
                 <th>Rzut (2d6)</th>
                 <th>Obrażenie</th>
-                <th>Efekt Obrażenia</th>
+                <th>Efekt Obrzędu</th>
                 <th>Przyspieszona Naprawa</th>
               </tr>
             </thead>
@@ -634,33 +752,216 @@ const Zasady = () => {
                 <td>2</td>
                 <td>Utrata Oka</td>
                 <td>
-                  Utracone Oko. -4 do Ataków Dystansowych i Testów Percepcji
-                  związanych ze wzrokiem. Kara +1 do Testu Przeżywalności.
+                  Utracone Oko jest nieobecne. -4 do Ataków Dystansowych i
+                  Testów Percepcji związanych z wzrokiem. Kara za Ratowanie
+                  Życia wzrasta o 1.
                 </td>
-                <td>N/A, Operacja DV17</td>
+                <td>
+                  N/A
+                  <br />
+                  Operacja DV17
+                </td>
               </tr>
               <tr>
                 <td>3</td>
                 <td>Uraz Mózgu</td>
                 <td>
-                  -2 do wszystkich Akcji. Kara +1 do Testu Przeżywalności.
+                  -2 do wszystkich Akcji. Kara za Ratowanie Życia wzrasta o 1.
                 </td>
-                <td>N/A, Operacja DV17</td>
+                <td>
+                  N/A
+                  <br />
+                  Operacja DV17
+                </td>
               </tr>
               <tr>
                 <td>4</td>
                 <td>Uszkodzone Oko</td>
                 <td>
-                  -2 do Ataków Dystansowych i Testów Percepcji związanych ze
+                  -2 do Ataków Dystansowych i Testów Percepcji związanych z
                   wzrokiem.
                 </td>
-                <td>Paramedic DV15, Operacja DV13</td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV15
+                  <br />
+                  Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Wstrząs Mózgu</td>
+                <td>-2 do wszystkich Akcji.</td>
+                <td>
+                  Pierwsza Pomoc lub
+                  <br />
+                  Paramedic DV13
+                  <br />
+                  Szybka Naprawa trwale usuwa Efekt Obrzędu
+                </td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Złamana Szczęka</td>
+                <td>-4 do wszystkich Akcji związanych z mówieniem.</td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV13
+                  <br />
+                  Paramedic lub Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Obcy Obiekt</td>
+                <td>
+                  Na koniec każdej Tury, w której poruszasz się dalej niż
+                  4m/jardów pieszo, ponosisz dodatkowe obrażenia od tego
+                  Krytycznego Urazu bezpośrednio na swoich Punktach Życia.
+                </td>
+                <td>
+                  Pierwsza Pomoc lub
+                  <br />
+                  Paramedic DV13
+                  <br />
+                  Szybka Naprawa trwale usuwa Efekt Obrzędu
+                </td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Uraz Szyi</td>
+                <td>Kara za Ratowanie Życia wzrasta o 1.</td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV13
+                  <br />
+                  Paramedic lub Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Spękany Czaszka</td>
+                <td>
+                  Celne Strzały w głowę mnożą obrażenia, które przechodzą przez
+                  SP, przez 3 zamiast 2. Kara za Ratowanie Życia wzrasta o 1.
+                </td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV15
+                  <br />
+                  Paramedic lub Operacja DV15
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Uszkodzone Ucho</td>
+                <td>
+                  Za każdym razem, gdy poruszasz się dalej niż 4m/jardów pieszo
+                  w Turze, nie możesz wykonać Akcji Ruchu w następnej Turze.
+                  Dodatkowo, otrzymujesz -2 do Testów Percepcji związanych z
+                  słuchaniem.
+                </td>
+                <td>
+                  Paramedic
+                  <br />
+                  DV13
+                  <br />
+                  Operacja DV13
+                </td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Zmiażdżona Tchawica</td>
+                <td>Nie możesz mówić. Kara za Ratowanie Życia wzrasta o 1.</td>
+                <td>
+                  N/A
+                  <br />
+                  Operacja DV15
+                </td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Utrata Ucha</td>
+                <td>
+                  Utracone Ucho jest nieobecne. Za każdym razem, gdy poruszasz
+                  się dalej niż 4m/jardów pieszo w Turze, nie możesz wykonać
+                  Akcji Ruchu w następnej Turze. Dodatkowo, otrzymujesz -4 do
+                  Testów Percepcji związanych z słuchaniem. Kara za Ratowanie
+                  Życia wzrasta o 1.
+                </td>
+                <td>
+                  N/A
+                  <br />
+                  Operacja DV17
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </Article>
+        <Article articleName="test przeżywalności">
+          <p>
+            Na początku każdej z Twoich Tur, gdy jesteś Śmiertelnie Ranny,
+            musisz wykonać test Ratowania Życia.
+          </p>
+
+          <Box>
+            <p>Rzuć kostką d10.</p>
+            <p>Sukces: Wynik &lt; BC - Modyfikatory</p>
+          </Box>
+          <p>
+            Każdy nieudany rzut daje Mod -1. Wynik 10 na kostce to automatyczna
+            śmierć.
+          </p>
+        </Article>
+        <Article articleName="osłony">
+          <table>
+            <thead>
+              <tr>
+                <th>Rodzaj Osłony</th>
+                <th>Gruba HP</th>
+                <th>Cienka HP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Stal</td>
+                <td>50 HP</td>
+                <td>25 HP</td>
+              </tr>
+              <tr>
+                <td>Kamień</td>
+                <td>40 HP</td>
+                <td>20 HP</td>
+              </tr>
+              <tr>
+                <td>Szkło pancerne</td>
+                <td>30 HP</td>
+                <td>15 HP</td>
+              </tr>
+              <tr>
+                <td>Beton</td>
+                <td>25 HP</td>
+                <td>10 HP</td>
+              </tr>
+              <tr>
+                <td>Drewno</td>
+                <td>20 HP</td>
+                <td>5 HP</td>
+              </tr>
+              <tr>
+                <td>Plastik/etc.</td>
+                <td>15 HP</td>
+                <td>0 HP</td>
               </tr>
             </tbody>
           </table>
         </Article>
       </Section>
-    </div>
+    </>
   );
 };
 
