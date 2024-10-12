@@ -1,8 +1,8 @@
-import NavBar from "./NavBar/NavBar.tsx";
-import AkcjeIInicjatywa from "./AkcjeIInicjatywa/AkcjeIInicjatywa.tsx";
-import WalkaDystansowa from "./WalkaDystansowa/WalkaDystansowa.tsx";
-import WalkaWZwarciu from "./WalkaWZwarciu/WalkaWZwarciu.tsx";
-import ObrazeniaIOslony from "./ObrazeniaIOslony/ObrazeniaIOslony.tsx";
+import NavBar from "./Zasady/NavBar/NavBar.tsx";
+import AkcjeIInicjatywa from "./Zasady/AkcjeIInicjatywa/AkcjeIInicjatywa.tsx";
+import WalkaDystansowa from "./Zasady/WalkaDystansowa/WalkaDystansowa.tsx";
+import WalkaWZwarciu from "./Zasady/WalkaWZwarciu/WalkaWZwarciu.tsx";
+import ObrazeniaIOslony from "./Zasady/ObrazeniaIOslony/ObrazeniaIOslony.tsx";
 
 function App() {
   return (

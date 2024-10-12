@@ -66,7 +66,7 @@ const AkcjeIInicjatywa = () => {
               </td>
             </tr>
             <tr>
-              <td>Złapanie</td>
+              <td>Pochwycenie</td>
               <td>
                 Złap i trzymaj przeciwnika lub chwyć trzymany przez niego
                 przedmiot.

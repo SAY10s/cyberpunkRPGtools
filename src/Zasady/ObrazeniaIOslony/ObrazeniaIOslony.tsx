@@ -67,7 +67,7 @@ const ObrazeniaIOslony = () => {
             </tr>
             <tr>
               <td>Martwy</td>
-              <td>Jedno nieudane Ratowanie Życia</td>
+              <td>Jedno nieudane Test Przeżywalności</td>
               <td>Śmierć</td>
               <td>Broskie nie żyje. Jak go chcesz kurwa stabilizować.</td>
             </tr>
@@ -91,7 +91,7 @@ const ObrazeniaIOslony = () => {
               <td>Odcięta Ręka</td>
               <td>
                 Odcięta Ręka jest nieobecna. Natychmiast wypuszczasz przedmioty
-                trzymane w tej ręce. Kara za Ratowanie Życia wzrasta o 1.
+                trzymane w tej ręce. Kara za Test Przeżywalności wzrasta o 1.
               </td>
               <td>
                 N/A
@@ -104,7 +104,7 @@ const ObrazeniaIOslony = () => {
               <td>Odcięta Dłoń</td>
               <td>
                 Odcięta Dłoń jest nieobecna. Natychmiast wypuszczasz przedmioty
-                trzymane w tej dłoni. Kara za Ratowanie Życia wzrasta o 1.
+                trzymane w tej dłoni. Kara za Test Przeżywalności wzrasta o 1.
               </td>
               <td>
                 N/A
@@ -116,7 +116,8 @@ const ObrazeniaIOslony = () => {
               <td>4</td>
               <td>Zapadnięte Płuco</td>
               <td>
-                -2 do RUCHU (minimum 1). Kara za Ratowanie Życia wzrasta o 1.
+                -2 do RUCHU (minimum 1). Kara za Test Przeżywalności wzrasta o
+                1.
               </td>
               <td>
                 Paramedic
@@ -202,7 +203,7 @@ const ObrazeniaIOslony = () => {
               <td>Uraz Kręgosłupa</td>
               <td>
                 W następnej Turze nie możesz podjąć Akcji, ale nadal możesz
-                wykonać Akcję Ruchu. Kara za Ratowanie Życia wzrasta o 1.
+                wykonać Akcję Ruchu. Kara za Test Przeżywalności wzrasta o 1.
               </td>
               <td>
                 Paramedic
@@ -229,7 +230,7 @@ const ObrazeniaIOslony = () => {
               <td>Odcięta Noga</td>
               <td>
                 Odcięta Noga jest nieobecna. -6 do RUCHU (minimum 1). Nie możesz
-                unikać ataków. Kara za Ratowanie Życia wzrasta o 1.
+                unikać ataków. Kara za Test Przeżywalności wzrasta o 1.
               </td>
               <td>
                 N/A
@@ -257,8 +258,8 @@ const ObrazeniaIOslony = () => {
               <td>Utrata Oka</td>
               <td>
                 Utracone Oko jest nieobecne. -4 do Ataków Dystansowych i Testów
-                Percepcji związanych z wzrokiem. Kara za Ratowanie Życia wzrasta
-                o 1.
+                Percepcji związanych z wzrokiem. Kara za Test Przeżywalności
+                wzrasta o 1.
               </td>
               <td>
                 N/A
@@ -270,7 +271,7 @@ const ObrazeniaIOslony = () => {
               <td>3</td>
               <td>Uraz Mózgu</td>
               <td>
-                -2 do wszystkich Akcji. Kara za Ratowanie Życia wzrasta o 1.
+                -2 do wszystkich Akcji. Kara za Test Przeżywalności wzrasta o 1.
               </td>
               <td>
                 N/A
@@ -336,7 +337,7 @@ const ObrazeniaIOslony = () => {
             <tr>
               <td>8</td>
               <td>Uraz Szyi</td>
-              <td>Kara za Ratowanie Życia wzrasta o 1.</td>
+              <td>Kara za Test Przeżywalności wzrasta o 1.</td>
               <td>
                 Paramedic
                 <br />
@@ -350,7 +351,7 @@ const ObrazeniaIOslony = () => {
               <td>Spękany Czaszka</td>
               <td>
                 Celne Strzały w głowę mnożą obrażenia, które przechodzą przez
-                SP, przez 3 zamiast 2. Kara za Ratowanie Życia wzrasta o 1.
+                SP, przez 3 zamiast 2. Kara za Test Przeżywalności wzrasta o 1.
               </td>
               <td>
                 Paramedic
@@ -380,7 +381,9 @@ const ObrazeniaIOslony = () => {
             <tr>
               <td>11</td>
               <td>Zmiażdżona Tchawica</td>
-              <td>Nie możesz mówić. Kara za Ratowanie Życia wzrasta o 1.</td>
+              <td>
+                Nie możesz mówić. Kara za Test Przeżywalności wzrasta o 1.
+              </td>
               <td>
                 N/A
                 <br />
@@ -394,7 +397,7 @@ const ObrazeniaIOslony = () => {
                 Utracone Ucho jest nieobecne. Za każdym razem, gdy poruszasz się
                 dalej niż 4m/jardów pieszo w Turze, nie możesz wykonać Akcji
                 Ruchu w następnej Turze. Dodatkowo, otrzymujesz -4 do Testów
-                Percepcji związanych z słuchaniem. Kara za Ratowanie Życia
+                Percepcji związanych z słuchaniem. Kara za Test Przeżywalności
                 wzrasta o 1.
               </td>
               <td>
@@ -415,7 +418,7 @@ const ObrazeniaIOslony = () => {
 
         <div className="rzuty-box">
           <p>Rzuć kostką d10.</p>
-          <p>Sukces: Wynik &lt BC - Modyfikatory</p>
+          <p>Sukces: Wynik &lt; BC - Modyfikatory</p>
         </div>
         <p>
           Każdy nieudany rzut daje Mod -1. Wynik 10 na kostce to automatyczna
