@@ -1,11 +1,11 @@
 import React from "react";
 
-interface GoToProps {
+interface NavLinkProps {
   id: string;
   text: string;
 }
 
-const GoTo: React.FC<GoToProps> = ({ id, text }) => {
+const NavLink: React.FC<NavLinkProps> = ({ id, text }) => {
   return (
     <li>
       <a href={id}>{text}</a>
@@ -13,4 +13,4 @@ const GoTo: React.FC<GoToProps> = ({ id, text }) => {
   );
 };
 
-export default GoTo;
+export default NavLink;

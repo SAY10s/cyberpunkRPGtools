@@ -1,47 +1,47 @@
-import GoTo from "./GoTo.tsx";
+import NavLink from "./NavLink.tsx";
 
 const NavBar = () => {
   return (
     <nav>
       <ul>
         <li>
-          <GoTo id="#akcje-i-inicjatywa" text="Akcje i inicjatywa" />
+          <NavLink id="#akcje-i-inicjatywa" text="Akcje i inicjatywa" />
           <ul className="nested-ul">
-            <GoTo id="#inicjatywa" text="inicjatywa" />
-            <GoTo id="#skrot-akcji" text="skrót akcji" />
-            <GoTo id="#akcja-ruchu" text="Akcja ruchu" />
-            <GoTo id="#inne-typy-ruchu" text="inne typy ruchu" />
+            <NavLink id="#inicjatywa" text="inicjatywa" />
+            <NavLink id="#skrot-akcji" text="skrót akcji" />
+            <NavLink id="#akcja-ruchu" text="Akcja ruchu" />
+            <NavLink id="#inne-typy-ruchu" text="inne typy ruchu" />
           </ul>
         </li>
         <li>
-          <GoTo id="#walka-dystansowa" text="Walka dystansowa" />
+          <NavLink id="#walka-dystansowa" text="Walka dystansowa" />
           <ul className="nested-ul">
-            <GoTo id="#celowanie" text="Celowanie" />
-            <GoTo id="#ogien-pojedynczy" text="ogień pojedynczy" />
-            <GoTo id="#ogien-ciagly" text="ogień ciągły" />
-            <GoTo id="#inne-ataki-dystansowe" text="inne" />
+            <NavLink id="#celowanie" text="Celowanie" />
+            <NavLink id="#ogien-pojedynczy" text="ogień pojedynczy" />
+            <NavLink id="#ogien-ciagly" text="ogień ciągły" />
+            <NavLink id="#inne-ataki-dystansowe" text="inne" />
           </ul>
         </li>
         <li>
-          <GoTo id="#walka-w-zwarciu" text="Walka w zwarciu" />
+          <NavLink id="#walka-w-zwarciu" text="Walka w zwarciu" />
           <ul className="nested-ul">
-            <GoTo id="#bron-biala" text="broń biała" />
-            <GoTo id="#bijatyka" text="bijatyka" />
-            <GoTo id="#pochwycenie" text="pochwycenie" />
-            <GoTo id="#duszenie" text="duszenie" />
-            <GoTo id="#rzut" text="rzut" />
-            <GoTo id="#sztuki-walki" text="Sztuki walki" />
+            <NavLink id="#bron-biala" text="broń biała" />
+            <NavLink id="#bijatyka" text="bijatyka" />
+            <NavLink id="#pochwycenie" text="pochwycenie" />
+            <NavLink id="#duszenie" text="duszenie" />
+            <NavLink id="#rzut" text="rzut" />
+            <NavLink id="#sztuki-walki" text="Sztuki walki" />
           </ul>
         </li>
         <li>
-          <GoTo id="#obrazenia-i-oslony" text="obrażenia i osłony" />
+          <NavLink id="#obrazenia-i-oslony" text="obrażenia i osłony" />
           <ul className="nested-ul">
-            <GoTo id="#otrzymywanie-obrazen" text="Otrzymywanie obrażeń" />
-            <GoTo id="#progi-ran" text="progi ran" />
-            <GoTo id="#rany-krytyczne-ciala" text="Rany Krytyczne Ciała" />
-            <GoTo id="#rany-krytyczne-glowy" text="Rany Krytyczne Głowy" />
-            <GoTo id="#test-przezywalnosci" text="Test przeżywalności" />
-            <GoTo id="#oslony" text="Osłony" />
+            <NavLink id="#otrzymywanie-obrazen" text="Otrzymywanie obrażeń" />
+            <NavLink id="#progi-ran" text="progi ran" />
+            <NavLink id="#rany-krytyczne-ciala" text="Rany Krytyczne Ciała" />
+            <NavLink id="#rany-krytyczne-glowy" text="Rany Krytyczne Głowy" />
+            <NavLink id="#test-przezywalnosci" text="Test przeżywalności" />
+            <NavLink id="#oslony" text="Osłony" />
           </ul>
         </li>
       </ul>
